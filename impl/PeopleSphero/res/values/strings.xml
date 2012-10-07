@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">People Sphero</string>
+    <string name="command_req">Drop me a command:</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">People Sphero</string>
+    <string name="command_exec">Execute</string>
+
+</resources>

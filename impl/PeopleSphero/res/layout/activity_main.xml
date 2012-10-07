@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/inputLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/command_req"
+        tools:context=".MainActivity" />
+
+    <EditText
+        android:id="@+id/inputCmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/execBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/inputCmd"
+        android:layout_below="@+id/inputCmd"
+        android:layout_marginTop="14dp"
+        android:onClick="execCommand"
+        android:text="@+string/command_exec" 
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/inputCmds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/execBtn"
+        android:layout_below="@+id/execBtn"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:height="180dp"/>
+
+    <Button
+        android:id="@+id/execCmdsButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/inputCmds"
+        android:layout_below="@+id/inputCmds"
+        android:layout_marginTop="18dp"
+        android:text="@+string/command_exec"
+        android:enabled="false"
+        android:onClick="execCommands" />
+
+</RelativeLayout>

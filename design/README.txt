@@ -1,0 +1,3 @@
+This directory is used to put all related files of the design of the project.
+
+The directory can contain subdirectories with the several scopes implicated in the project; for example graphic design, wireframes, semi-function mockups, ...

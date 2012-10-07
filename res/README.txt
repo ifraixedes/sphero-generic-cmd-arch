@@ -1,0 +1,3 @@
+This directory is used to store the current used resources in the project development. 
+
+For example, the concrete version of libraries, frameworks, ...
